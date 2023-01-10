@@ -16,8 +16,10 @@ let tempAmount = 0;
 totalAmountButton.addEventListener("click", () => {
     tempAmount = totalAmount.value;
     // Empty or Negative Input
-    if (tempAmount === ""||tempAmount < 0) {
+    if (tempAmount === ""|| tempAmount < 0) {
         errorMessage.classList.remove("hide");
+            } else {
+        errorMessage.classList.add("hide");
     // Set Budget
     amount.innerHTML = tempAmount;
     //Set Balance
